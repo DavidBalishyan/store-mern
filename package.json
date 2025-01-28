@@ -7,7 +7,7 @@
 		"frontend": "cd frontend && pnpm run dev",
 		"backend": "nodemon backend/server.js",
 		"start": "concurrently \"pnpm run backend\" \"pnpm run frontend\"",
-		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+		"build": "pnpm install && pnpm install --prefix frontend && pnpm run build --prefix frontend"
 	},
 	"type": "module",
 	"keywords": [],
